@@ -1,0 +1,95 @@
+Número;Sample;Reads - demux;Local;Especie;Subespecie;Anilha/Museu;Museu/Tombo;lat1;lat2;lat3;long1;long2;long3
+Piri 253;Piri253;3185140;Fazenda Tabapuã dos Pirineus- Cocalziho- Goias;Tangara cayana;sincipitalis;;Labgenbio;-15;47;40;-48;46;33
+UFG2997;UFG2997;4157164;Fazenda Ouro e Prata - Nova Xavantina MT;Tangara cayana;margaritae;58V;Labgenbio;-14;39;25;-52;20;29
+UFG2998;UFG2998;3330680;Fazenda Ouro e Prata - Nova Xavantina MT;Tangara cayana;margaritae;30V;Labgenbio;-14;39;25;-52;20;29
+UFG3150;UFG3150;4137340;Parque Nacional Grande Sertão Veredas - MG;Tangara cayana;chloroptera;E101000;;-15;12;55;-45;45;26
+UFG3155;UFG3155;3925912;Parque Nacional Grande Sertão Veredas - MG;Tangara cayana;chloroptera;54 vermelha;;-15;12;55;-45;45;26
+UFG3192;UFG3192;6812294;Parque Nacional Grande Sertão Veredas - MG;Tangara cayana;chloroptera;E100965;;-15;12;55;-45;45;26
+UFG3804;UFG3804;4466927;Tangara chilensis - outgroup;Tangara chilensis;;;;;;;;;
+UFG4003;UFG4003;8678385;Fazenda Experimental da Embrapa - Macapá / AP;Tangara cayana;cayana;E119507;Labgenbio;0;23;40;-51;3;20
+UFG4007;UFG4007;9201031;Fazenda Experimental da Embrapa - Macapá / AP;Tangara cayana;cayana;F46497;Labgenbio;0;23;40;-51;3;20
+UFG4009;UFG4009;8027210;Fazenda Experimental da Embrapa - Macapá / AP;Tangara cayana;cayana;F46414;Labgenbio;0;23;40;-51;3;20
+UFG4028;UFG4028;127731;Fazenda Experimental da Embrapa - Macapá / AP;Tangara cayana;cayana;E119527;Labgenbio;0;23;40;-51;3;20
+UFG4030;UFG4030;6142283;Fazenda Experimental da Embrapa - Macapá / AP;Tangara cayana;cayana;E119533;Labgenbio;0;23;40;-51;3;20
+UFG4047;UFG4047;4887104;Fazenda Experimental da Embrapa - Macapá / AP;Tangara cayana;cayana;VOUCHER;Labgenbio;0;24;1;-51;3;8
+UFG4051;UFG4051;11479489;Fazenda Experimental da Embrapa - Macapá / AP;Tangara cayana;cayana;E119532;Labgenbio;0;23;57;-51;3;8
+UFG4097;UFG4097;11146008;Fazenda Experimental da Embrapa - Macapá / AP;Tangara cayana;cayana;E119595;Labgenbio;0;23;5;-51;3;3
+UFG4117;UFG4117;22708679;Fazenda Experimental da Embrapa - Macapá / AP;Tangara cayana;cayana;VOUCHER;Labgenbio;0;23;12;-51;3;4
+UFG4125;UFG4125;3689875;Fazenda Experimental da Embrapa - Macapá / AP;Tangara cayana;cayana;E119568;Labgenbio;0;23;12;-51;3;4
+UFG4154;UFG4154;3646621;Fazenda Experimental da Embrapa - Macapá / AP;Tangara cayana;cayana;E119583;Labgenbio;0;23;12;-51;3;4
+UFG4156;UFG4156;9003173;Fazenda Experimental da Embrapa - Macapá / AP;Tangara cayana;cayana;E119585;Labgenbio;0;23;12;-51;3;4
+UFG4162;UFG4162;8495078;Fazenda Experimental da Embrapa - Macapá / AP;Tangara cayana;cayana;E119553;Labgenbio;0;23;12;-51;3;4
+UFG4222;UFG4222;11846662; Ilha do Marajó / PA;Tangara cayana;huberi;VOUCHER;;0;51;39;-48;37;10
+UFG4228;UFG4228;10900792; Ilha do Marajó / PA;Tangara cayana;huberi;VOUCHER;;0;51;39;-48;37;10
+UFG4233;UFG4233;7205806; Ilha do Marajó / PA;Tangara cayana;huberi;VOUCHER;;0;51;8;-48;37;10
+UFG4521;UFG4521;7198160;Parque Nacional Chapada das Mesas/Carolina-MA;Tangara cayana;flava;;;-7;19;0;-47;20;6
+UFG4642;UFG4642;4534740;Parque Nacional Chapada das Mesas/Carolina-MA;Tangara cayana;flava;;;-7;19;0;-47;20;6
+UFG5104;UFG5104;10098503;Estação Ecologica Apa Gama Cabeça de Veado;Tangara cayana;sincipitalis;F46420;Labgenbio;-15;55;53;-47;54;55
+UFG5131;UFG5131;6683268;Estação Ecologica Apa Gama Cabeça de Veado;Tangara cayana;sincipitalis;F46549;Labgenbio;-15;55;53;-47;54;55
+UFG5133;UFG5133;5443386;Estação Ecologica Apa Gama Cabeça de Veado;Tangara cayana;sincipitalis;F46548;Labgenbio;-15;55;53;-47;54;55
+UFG5138;UFG5138;5412577;Estação Ecologica Apa Gama Cabeça de Veado;Tangara cayana;sincipitalis;F46539;Labgenbio;-15;55;53;-47;54;55
+UFG5506;UFG5506;3593516;Fazenda Tabapuã dos Pirineus, Cocalzinho - GO;Tangara cayana;sincipitalis;;;-15;47;40;-48;46;33
+UFG5634;UFG5634;547383;Pedra Petra, Correntina, Bahia;Tangara cayana;flava;MUZUSP83388;;-13;13;35;-44;28;37
+UFG5635;UFG5635;1634803;Pedra Petra, Correntina, Bahia;Tangara cayana;flava;MUZUSP83389;;-13;13;35;-44;28;37
+UFG5636;UFG5636;8102505;Jundiaí, São Paulo;Tangara cayana;chloroptera;MUZUSP83507;;-23;11;10;-46;54;16
+UFG5637;UFG5637;2595078;Jundiaí, São Paulo;Tangara cayana;chloroptera;MUZUSP83508;;-23;11;10;-46;54;16
+UFG5638;UFG5638;3908895;Mang, E.S.F., Fazenda Poço Coeri, APA Pidoabera, Alagoas;Tangara cayana;flava;MUZUSP84534;;-10;24;87;-36;22;34
+UFG5639;UFG5639;512539;Margem Rio Palmo, Parana, Tocantins;Tangara cayana;flava;MUZUSP84485;;-12;32;44;-47;46;26
+UFG5640;UFG5640;5276388;Usina Serra Grande, Mata do Pinto, Alagoas;Tangara cayana;flava;MUZUSP85770;;-8;58;20;-36;6;26
+UFG5641;UFG5641;4852157;São José do Rio Preto, São Paulo;Tangara cayana;chloroptera;MUZUSP88405;;-20;48;33;-49;21;35
+UFG5642;UFG5642;2220222;Itiqueira, F. Araras, Ponto P3- MT;Tangara cayana;margaritae;MUZUSP88410;;-17;11;51;-54;7;46
+UFG5643;UFG5643;5704733;Sant. Caroça, Cotas Altas, Minas Gerais;Tangara cayana;chloroptera;MUZUSP88705;;-20;5;53;-43;29;16
+UFG5644;UFG5644;5213487;Almerara, Minas Gerais;Tangara cayana;chloroptera;MUZUSP86009;;-16;56;15;-40;51;53
+UFG5645;UFG5645;1748434;Santana do Araguaia, Fazenda Fartrura, Para;Tangara cayana;flava;MUZUSP90257;;-8;12;26;-49;47;10
+UFG5646;UFG5646;3584704;Santana do Araguaia, Fazenda Fartrura, Para;Tangara cayana;flava;MUZUSP90256;;-8;12;26;-49;47;10
+UFG5647;UFG5647;1595388;Sumidoro, Brotas de Macaúba, Bahia;Tangara cayana;flava;MUZUSP93122;;-12;20;14;-42;20;13
+UFG5648;UFG5648;3467315;Serra da Jiboia, Fazenda Jaquitiba, Elísio Mediado, Bahia;Tangara cayana;flava;MUZUSP91535;;-12;52;13;-39;28;41
+UFG5649;UFG5649;4830142;Serra da Jiboia, Fazenda Jaquitiba, Elísio Mediado, Bahia;Tangara cayana;flava;MUZUSP91536;;-12;55;8;-39;26;49
+UFG5651;UFG5651;1880755;Rio Jutari, Sítio São Bento, Roraíma;Tangara cayana;cayana;MUZUSP94290;;1;6;0;-62;0;48
+UFG5652;UFG5652;5830949;Rio Jutari, Sítio São Bento, Roraíma;Tangara cayana;cayana;MUZUSP94291;;1;6;0;-62;0;48
+UFG5654;UFG5654;2043861;Povoado Vista Alegre, Roraíma;Tangara cayana;cayana;MUZUSP96904;;3;10;57;-60;33;26
+UFG5655;UFG5655;2824364;Povoado Vista Alegre, Roraíma;Tangara cayana;cayana;MUZUSP96905;;3;10;57;-60;33;26
+UFG5657;UFG5657;5921022;Fazenda Prana, Campos do Jordão, São Paulo;Tangara cayana;chloroptera;MUZUSP96864;;-22;45;34;-45;3;59
+UFG5658;UFG5658;3891467;Fazenda Prana, Campos do Jordão, São Paulo;Tangara cayana;chloroptera;MUZUSP96866;;-22;45;34;-45;3;59
+UFG5660;UFG5660;13447;Novo Aripuanã, Rodovia do Estanho, Fazenda Copeares, Manicoré, Amazonas ;Tangara cayana;margaritae;GOELD57797;;-8;28;20;-61;23;35
+UFG5661;UFG5661;5595408;Óbidos, ESEC Grão-Pará;Tangara cayana;cayana;GOELD66774;;0;37;50;-55;43;40
+UFG5664;UFG5664;3707050;Óbidos, ESEC Grão-Pará;Tangara cayana;cayana;GOELD66771;;0;37;50;-55;43;40
+UFG5667;UFG5667;107163;Guadalupe, Fazenda Maharishi, Praia Indianos - Piauí;Tangara cayana;flava;GOELD68769;;-6;44;47;-43;50;21
+UFG5668;UFG5668;69594;Barreiros, Engenho Cachoeira Linda- Pernambuco;Tangara cayana;flava;GOELD70537;;-8;48;0;-35;19;0
+UFG5669;UFG5669;2885170;Curimatá, Serra Vermelha - Piauí;Tangara cayana;flava;GOELD68767;;-9;41;28;-44;14;20
+UFG5670;UFG5670;9983174;Ilhéus, Ecoparque de UMA- Bahia;Tangara cayana;flava;GOELD70806;;-15;11;43;-39;11;42
+UFG5671;UFG5671;2469399;Ilhéus, Ecoparque de UMA- Bahia;Tangara cayana;flava;GOELD70807;;-15;11;43;-39;11;42
+UFG5672;UFG5672;3261535;Amajari, Fazenda Uberaba- Roraima;Tangara cayana;cayana;GOELD74310;;3;29;12;-60;56;6
+UFG5689;UFG5689;5961450;Fazenda Saloba, Montes Claros de Goiás- Goiás;Tangara cayana;sincipitalis;UFMGDZ5485;;-16;2;18;-51;21;39
+UFG5690;UFG5690;2848018;Mun. José de Freitas;Tangara cayana;flava;;;-4;45;27;-42;34;48
+UFG5691;UFG5691;1095584;Estrada para Água Fria, Chapada dos Guimarães, Mato Grosso;Tangara cayana;margaritae;UFMGDZ5835;;-15;24;30;-55;40;56
+UFG5692;UFG5692;31086;Sítio Marimbondo, Chapada dos Guimarães- Mato Grosso;Tangara cayana;margaritae;UFMGDZ5834;;-15;11;4;-55;40;56
+UFG5693;UFG5693;4470000;Barragem de rejeito da USIMINAS, Serra Azul, Itatiaiuçu, Minas Gerais;Tangara cayana;chloroptera;UFMGDZ6789;;-20;8;51;-44;24;54
+UFG5694;UFG5694;2166045;Estrada para Água Fria, Chapada dos Guimarães, Mato Grosso;Tangara cayana;margaritae;UFMGDZ5836;;-15;24;30;-55;40;56
+UFG5695;UFG5695;9160066;Barragem de rejeito da USIMINAS, Serra Azul, Itatiaiuçu, Minas Gerais;Tangara cayana;chloroptera;UFMGDZ6790;;-20;8;51;-44;24;54
+UFG5697;UFG5697;4968413;Fazenda Saloba, Montes Claros de Goiás- Goiás;Tangara cayana;sincipitalis;UFMGDZ5487;;-16;2;18;-51;21;39
+UFG5698;UFG5698;2575739;Fazenda Três Irmãs, Refúgio da Vida Silvestre Rio Pandeiros, distrito de Tejuco Januária,  Januária, Minas Gerais;Tangara cayana;chloroptera;UFMGDZ5560;;-15;39;59;-44;37;59
+UFG5703;UFG5703;7788569;Fazenda Sabiá, Capelinha - MG;Tangara cayana;chloroptera;;;-17;41;29;-42;30;57
+UFG5717;UFG5717;8020227;Chácara Paraíso, Capelinha - MG;Tangara cayana;chloroptera;;;-17;41;29;-42;30;57
+UFG5748;UFG5748;1420226;South Rupununi, Ikuitau Mt., Guyana;Tangara cayana;cayana;;;3;0;0;-59;30;0
+UFG5750;UFG5750;3367730;Paruima, ca. 19 km N, at Mt. Holitipu, Guyana;Tangara cayana;cayana;;;6;27;53.98;-60;12;39
+UFG5751;UFG5751;6574657;Paruima, ca. 19 km N, at Mt. Holitipu, Guyana;Tangara cayana;cayana;;;6;27;53.98;-60;12;39
+UFG5752;UFG5752;5297536;Karasabai, ca 17 km SSW at Ireng River, Guyana;Tangara cayana;cayana;;;4;4;59;-59;30;0
+UFG5753;UFG5753;58317;Wiwitau Mountain, East Rupununi Savannah, Guyana;Tangara cayana;cayana;;;2;52;0;-59;16;0
+UFG5755;UFG5755;5539114;Kusad Mountain, NE Flank, South Rupununi Savannah, Guyana;Tangara cayana;cayana;;;2;49;0;-59;49;0
+UFG5756;UFG5756;3472810;Serrania de Huanchaca, 45 km E Florida- Bolivia;Tangara cayana;margaritae;;;-14;35;45.44;-60;57;8.22
+UFG5757;UFG5757;5097439;Serranaia de Huanchaca, 21 km SE Catarata Arco Iris- - Bolivia;Tangara cayana;margaritae;;;-14;35;45.44;-60;57;8.22
+UFG5758;UFG5758;6528677;Serranaia de Huanchaca, 21 km SE Catarata Arco Iris- - Bolivia;Tangara cayana;margaritae;;;-14;35;45.44;-60;57;8.22
+UFG5759;UFG5759;3270072;Prov. Velasco;;margaritae;;;-14;19;7;-60;49;37
+UFG5760;UFG5760;4727000;Serrania de Huanchaca, 45 km E Florida- Bolivia;Tangara cayana;margaritae;;;-14;35;45.44;-60;57;8.22
+UFG5761;UFG5761;3117760;West Demerara District;;cayana;;;6;43;79;-58;14;72
+UFG5762;UFG5762;4144903;West Demerara District;;cayana;;;6;43;79;-58;14;72
+UFG5763;UFG5763;7201830;Region 9, Ireng River, km Karasabai- Guyana;Tangara cayana;cayana;;;4;4;59;-59;30;0
+UFG5764;UFG5764;7397204;Brasil, Tocantis, Preseidente Kennedy;Tangara cayana;flava;MN683;;-8;31;0;-48;28;0
+UFG5765;UFG5765;4283637;Brasil, Bahia, Iramaia;Tangara cayana;flava;MN1638;;-13;17;31;-40;57;32
+UFG5767;UFG5767;4619054;Brasil, Bahia, Fazenda Terra Mater, Ibicoara;Tangara cayana;flava;MN2049;;-13;26;34;-41;17;6
+UFG5769;UFG5769;4652580;Brasil, Rio de Janeiro, BR 040, Km 56, sentido Juiz de Fora, Petrópolis;Tangara cayana;chloroptera;MN4241;;-22;32;8;-43;13;59
+UFG5770;UFG5770;2325452;Brasil, Mato Grosso do Sul, RPPN Vale do Bugio, município de Corguinho;Tangara cayana;chloroptera;MN4423;;-19;49;57;-54;49;45
+UFG5871;UFG5871;3208222;Fazenda Volta do Serra - Chapada dos Veadeiros;;flava;;Labgenbio;-14;4;59;-47;28;0
+UFG5913;UFG5913;6455959;Fazenda Volta do Serra - Chapada dos Veadeiros;Tangara cayana;flava;VOUCHER;Labgenbio;-14;4;59;-47;28;0
+UFG5930;UFG5930;110988;Fazenda Volta do Serra - Chapada dos Veadeiros;;flava;;Labgenbio;-14;4;59;-47;28;0
