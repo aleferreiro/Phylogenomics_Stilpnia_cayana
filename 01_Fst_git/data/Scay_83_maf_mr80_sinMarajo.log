@@ -1,0 +1,15 @@
+
+VCFtools - 0.1.16
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--vcf 00_IPYRAD/data/assembly_83/Stilpnia_cayana_83_bial_maf_mr80_noIndel.recode.vcf
+	--remove 01_Fst/data/Marajo_samples.txt
+	--out 01_Fst/data/Scay_83_maf_mr80_sinMarajo
+	--recode
+
+Excluding individuals in 'exclude' list
+After filtering, kept 80 out of 83 Individuals
+Outputting VCF file...
+After filtering, kept 19031 out of a possible 19031 Sites
+Run Time = 5.00 seconds
