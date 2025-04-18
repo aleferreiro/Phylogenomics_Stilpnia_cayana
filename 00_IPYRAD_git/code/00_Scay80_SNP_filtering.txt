@@ -1,0 +1,37 @@
+# Locate in the project directory
+cd path/to/projDir/
+
+# Filter biallelic SNPs only -------------------------------------
+vcftools --vcf 00_IPYRAD/data/assembly_80/Stilpnia_cayana_80.vcf --min-alleles 2 --max-alleles 2 --remove-indels --recode --out 00_IPYRAD/data/assembly_80/Stilpnia_cayana_80_bial
+
+
+# MAC filter (Cassia) --------------------------------------------
+
+# Filter biallelic SNPs by maf and missing rate (80%), and remove indels
+vcftools --vcf 00_IPYRAD/data/assembly_80/Stilpnia_cayana_80.vcf --min-alleles 2 --max-alleles 2 --mac 2 --max-missing 0.8 --remove-indels --recode --out 00_IPYRAD/data/assembly_80/Stilpnia_cayana_80_bial_mac_mr80_noIndel
+
+
+# MAF filtering --------------------------------------------------
+
+# Filter biallelic SNPs, maf (0.05) and missing rate per SNP (80%)
+vcftools --vcf 00_IPYRAD/data/assembly_80/Stilpnia_cayana_80.vcf --min-alleles 2 --max-alleles 2 --maf 0.05 --max-missing 0.8 --remove-indels --recode --out 00_IPYRAD/data/assembly_80/Stilpnia_cayana_80_bial_maf_mr80_noIndel
+
+# HWE filtering --------------------------------------------------
+
+# Assesses sites for Hardy-Weinberg Equilibrium using an exact test, 
+# as defined by Wigginton, Cutler and Abecasis (2005). Sites with a 
+# p-value below the  threshold defined by this option are taken to 
+# be out of HWE, and therefore excluded.
+
+# Filter biallelic SNPs, hwe of the SNPs and missing rate per SNP (80%)
+vcftools --vcf 00_IPYRAD/data/assembly_80/Stilpnia_cayana_80.vcf --min-alleles 2 --max-alleles 2 --hwe 0.00001 --max-missing 0.8 --remove-indels --recode --out 00_IPYRAD/data/assembly_80/Stilpnia_cayana_80_bial_hwe_mr80
+
+# MAC & HWE filter  --------------------------------------------
+
+# Filter biallelic SNPs by maf and missing rate (80%), and remove indels
+vcftools --vcf 00_IPYRAD/data/assembly_80/Stilpnia_cayana_80.vcf --min-alleles 2 --max-alleles 2 --mac 2 --hwe 0.00001 --max-missing 0.8 --remove-indels --recode --out 00_IPYRAD/data/assembly_80/Stilpnia_cayana_80_bial_mac_hwe_mr80_noIndel
+
+# MAC & HWE filter  --------------------------------------------
+
+# Filter biallelic SNPs by maf and missing rate (80%), and remove indels
+vcftools --vcf 00_IPYRAD/data/assembly_80/Stilpnia_cayana_80.vcf --min-alleles 2 --max-alleles 2 --maf 0.05 --hwe 0.00001 --max-missing 0.8 --remove-indels --recode --out 00_IPYRAD/data/assembly_80/Stilpnia_cayana_80_bial_maf_hwe_mr80_noIndel

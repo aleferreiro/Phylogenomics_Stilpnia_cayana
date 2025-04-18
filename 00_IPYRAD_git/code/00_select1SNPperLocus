@@ -1,0 +1,11 @@
+# First locate perl script in the same folder of the input and output file
+# From cmd
+
+# Move to the working directory
+
+cd "C:\Users\ale_f\OneDrive - mi.unc.edu.ar\Academia\Publicaciones\Phylogenomics_Tangara_cayana\Tangara_cayana\00_IPYRAD\data\assembly_80"
+
+# Filter recoded vcf to retain one SNP per locus (In cmd)
+
+perl randSnps.pl < Stilpnia_cayana_80_bial_maf_hwe_mr80_noIndel.recode.vcf > Stilpnia_cayana_80_bial_maf_mr80_noIndel_un.vcf #command (from any folder that contains the infile and the attached file) 
+
