@@ -1,0 +1,98 @@
+#################################
+# This is the code to estimate D-statistics of ABBA BABA test to assess introgression in the sample UFG4051.
+# We obtained D, its significance by jacknife procedure obtaining Z-scores (higher than 3 are considered significative)
+# and p-values, and lastely f-statistics (proportion of genome introgressed).
+
+# We obtained D statistic for 
+# •	P1= Remaining Amapá samples (12 samples)
+# •	P2= Sample UFG4051 (1 sample)
+# •	P3= SAS (10 samples, 3 from WST, 4 from EST and 3 from CAA)
+# •	P4=Tangara (1 sample)
+
+# To run, locate within 13_ABBA_BABA directory
+
+# The Dsuite tools needs the prefiltered vcf, the populations file, and a newick tree with the topology between populations (that defines P1, P2 AND P3)
+# here the newick tree was defined as:
+(NAS,(WST,EST));
+
+# Then, we run Dsuite to estimate the D-stats using the following sentence: 
+Dsuite/Build/Dsuite Dtrios \
+	-t 03_UFG4051_introgression/data/tree.nwk \
+	-o 03_UFG4051_introgression/result/01_Scay_84_24samp_bial_un_noMD \
+	-n 01 \
+	-k 100 \
+	03_UFG4051_introgression/data/Scay_84_24samp_bial_un_noMD.recode.vcf \
+	03_UFG4051_introgression/data/pops_24samp.txt
+
+# For this first run, we used the vcf, without missing data, with biallelic SNP, and 1 SNP per locus (2187 variants)
+# This perform jacknife procedure to obtain significance of D-statitics, by dividing the genomic dataset in 100 blocks (-k 100) and leaving one of them out on each resample iteration.
+# The -n argument helps to define a run number to the analysis that is added to the output file names.
+
+# After, this it will generate various files. The relevant is the _TREE as it provide D-stats for the topology we want to assess. 
+
+# Result: D = 0.447. Significant D (Z-score = 3.6044 and p-value = 0.0003), i.e. gene flow signal between UFG4051 and SAS. 
+
+#*********************************************
+# Output files
+
+# In [OUTPUT_NAME]_BBAA.txt, trios are arranged so that P1 and P2 always share the most derived alleles (BBAA is always the highest number). 
+# There are two other output files: one with the _tree.txt suffix: [OUTPUT_NAME]_tree.txt where trios are arranged according to the tree we gave Dsuite, 
+# and a file with the _Dmin.txt suffix [OUTPUT_NAME]_Dmin.txt where trios are arranged so that the D statistic is minimised - providing a kind of 
+# "lower bound" on gene-flow statistics.
+
+#**********************************************
+
+###############################################
+
+# Second run, by modifying number of blocks
+Dsuite/Build/Dsuite Dtrios \
+	-t 03_UFG4051_introgression/data/tree.nwk \
+	-o 03_UFG4051_introgression/result/02_Scay_84_24samp_bial_un_noMD \
+	-n 02 \
+	-k 20 \
+	03_UFG4051_introgression/data/Scay_84_24samp_bial_un_noMD.recode.vcf \
+	03_UFG4051_introgression/data/pops_24samp.txt
+
+# Result: D = 0.447. Significant D (Z-score = 3.11 and p-value = 0.001842), i.e. gene flow signal between UFG4051 and SAS. 
+
+###############################
+
+# As a third try we will use the dataset without filtering for missing data and with 20 blocks
+
+Dsuite/Build/Dsuite Dtrios \
+	-t 03_UFG4051_introgression/data/tree.nwk \
+	-o 03_UFG4051_introgression/result/03_Scay_84_24samp_bial_un \
+	-n 01 \
+	-k 20 \
+	03_UFG4051_introgression/data/Scay_84_24samp_bial_un.vcf \
+	03_UFG4051_introgression/data/pops_24samp.txt
+
+# Result: D = 0.1852. Significant D (Z-score = 4.41 and p-value = 1.027e-05), i.e. gene flow signal between UFG4051 and SAS. 
+
+############################### (WE REPORT THIS RESULT!)
+
+# As a fourth try we will use the dataset without filtering for missing data and with 100 blocks
+
+Dsuite/Build/Dsuite Dtrios \
+	-t 03_UFG4051_introgression/data/tree.nwk \
+	-o 03_UFG4051_introgression/result/04_Scay_84_24samp_bial_un \
+	-n 02 \
+	-k 100 \
+	03_UFG4051_introgression/data/Scay_84_24samp_bial_un.vcf \
+	03_UFG4051_introgression/data/pops_24samp.txt
+
+# Result: D = 0.1852. Significant D (Z-score = 4.41 and p-value = 1.027e-05), i.e. gene flow signal between UFG4051 and SAS.
+
+############################### (WE REPORT THIS RESULT!)
+
+# As a fifth try we will use the dataset without filtering for missing data and unliked SNPs and with 100 blocks
+
+Dsuite/Build/Dsuite Dtrios \
+	-t 03_UFG4051_introgression/data/tree.nwk \
+	-o 03_UFG4051_introgression/result/05_Scay_84_24samp_bial \
+	-n 02 \
+	-k 100 \
+	03_UFG4051_introgression/data/Scay_84_24samp_bial.recode.vcf \
+	03_UFG4051_introgression/data/pops_24samp.txt
+
+# Result: D = 0.14932. Significant D (Z-score = 9.32114 and p-value = 2.3e-16), vcftoolsi.e. gene flow signal between UFG4051 and SAS.
