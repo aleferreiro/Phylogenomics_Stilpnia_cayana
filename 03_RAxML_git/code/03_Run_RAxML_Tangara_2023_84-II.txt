@@ -1,0 +1,23 @@
+# First I connect to the i9_MACN cluster
+
+# Then I created a folder in my user called "RAxML_reduced"
+mkdir RAxML
+cd RAxML
+
+# From this folder I created a conda environment where I install iqtree and raxml
+conda create -n raxml
+conda activate raxml
+conda install raxml -c bioconda
+conda install iqtree -c bioconda
+
+# To obtain the tree with the best likelihood:
+raxmlHPC -m GTRGAMMA -p 12345 -# 100 -s Tangara_2023_84-II.phy -n Tangara_2023_84-II_BestTree T10
+
+# To get 1000 bootstrapped trees
+raxmlHPC -m GTRGAMMA -p 12345 -b 12345 -# 1000 -s Tangara_2023_84-II.phy -n Tangara_2023_84-II_bs T10
+
+# To draw bootstrap support values to the best likelihood tree
+raxmlHPC -m GTRGAMMA -p 12345 -f b -t RAxML_bestTree.Tangara_2023_84-II_BestTree -z RAxML_bootstrap.Tangara_2023_84-II_bs -n Tangara_2023_84-II_bsBestTree
+
+
+
