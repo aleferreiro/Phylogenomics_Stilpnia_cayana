@@ -1,0 +1,4 @@
+# Previously you have to have installed python 3.10 and numpy library.
+
+# From the working directory folder of the project:
+python 06_fastsimcoal2/code/Model_18_MSFSrecalc/01_loci2vcf.py 00_IPYRAD/Tangara_2023_83-II-txt_outfiles/Tangara_2023_83-II-txt.loci 06_fastsimcoal2/data/Model_18_MSFSrecalc/Scay_83_fullVcf.vcf 06_fastsimcoal2/data/Model_18_MSFSrecalc/samps.txt True

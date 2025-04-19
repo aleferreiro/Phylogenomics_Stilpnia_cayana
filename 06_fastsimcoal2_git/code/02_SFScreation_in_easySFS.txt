@@ -1,0 +1,42 @@
+# From within CCAD cluster in the linux console
+
+# activate environment
+micromamba activate easySFS
+
+# run a preview to select number of samples that maximizes segregation sites
+
+/home/aferreiro/easySFS/easySFS.py -i Scay83_full_6pop_5samp.recode.vcf -p easySFS_6pops_5samp.txt --order Guyana,ParaAmapa,Marajo,Caatinga,East,West --preview -a
+
+
+  Processing 6 populations - ['Guyana', 'ParaAmapa', 'Marajo', 'Caatinga', 'East', 'West']
+
+    Running preview mode. We will print out the results for # of segregating sites
+    for multiple values of projecting down for each population. The dadi
+    manual recommends maximizing the # of seg sites for projections, but also
+    a balance must be struck between # of seg sites and sample size.
+
+    For each population you should choose the value of the projection that looks
+    best and then rerun easySFS with the `--proj` flag.
+
+Guyana
+(2, 160332)     (3, 240499)     (4, 294424)     (5, 334760)     (6, 365600)     (7, 386609)     (8, 401208)     (9, 405042)     (10, 405042)
+
+ParaAmapa
+(2, 93871)      (3, 140807)     (4, 172424)     (5, 196062)     (6, 214186)     (7, 226255)     (8, 234844)     (9, 236936)     (10, 236936)
+
+Marajo
+(2, 87401)      (3, 131101)     (4, 152684)     (5, 161871)     (6, 161871)
+
+Caatinga
+(2, 127864)     (3, 191796)     (4, 233842)     (5, 264552)     (6, 287692)     (7, 302857)     (8, 313616)     (9, 314486)     (10, 314486)
+
+East
+(2, 106513)     (3, 159770)     (4, 195827)     (5, 222910)     (6, 243732)     (7, 257393)     (8, 267241)     (9, 267663)     (10, 267663)
+
+West
+(2, 205126)     (3, 307689)     (4, 373144)     (5, 419541)     (6, 453654)     (7, 475980)     (8, 491495)     (9, 493092)     (10, 493092)
+
+# Create SFS
+/home/aferreiro/easySFS/easySFS.py -i Scay83_full_6pop_5samp.recode.vcf -p easySFS_6pops_5samp.txt --order Guyana,ParaAmapa,Marajo,Caatinga,East,West --proj 10,10,6,10,10,10 -a --dtype int --total-length 1424327
+
+# After that we moved the _MSFS.obs file to the directory where fsc will be runned

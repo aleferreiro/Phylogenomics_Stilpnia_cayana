@@ -1,0 +1,56 @@
+// Priors and rules file
+// *********************
+
+[PARAMETERS]
+//#isInt? #name   #dist.#min  #max 
+//all Ns are in number of haploid individuals
+1 $NGUY$ unif 1e5 1e6 output bounded 
+1 $NPAR$ unif 1e5 1e6 output bounded
+1 $NMJO$ unif 1e4 1e5 output bounded
+1 $NCAA$ unif 1e5 1e6 output bounded
+1 $NEST$ unif 1e5 1e6 output bounded
+1 $NWST$ unif 1e5 1e6 output bounded
+0 $GUYPAR$ logunif 1e-8 1e-3 output bounded
+0 $GUYMJO$ logunif 1e-8 1e-3 output bounded
+0 $GUYCAA$ logunif 1e-8 1e-3 output bounded
+0 $GUYEST$ logunif 1e-8 1e-3 output bounded
+0 $GUYWST$ logunif 1e-8 1e-3 output bounded
+0 $PARMJO$ logunif 1e-8 1e-3 output bounded
+0 $PARCAA$ logunif 1e-8 1e-3 output bounded
+0 $PAREST$ logunif 1e-8 1e-3 output bounded
+0 $PARWST$ logunif 1e-8 1e-3 output bounded
+0 $MJOCAA$ logunif 1e-8 1e-3 output bounded
+0 $MJOEST$ logunif 1e-8 1e-3 output bounded
+0 $MJOWST$ logunif 1e-8 1e-3 output bounded
+0 $CAAEST$ logunif 1e-8 1e-3 output bounded
+0 $CAAWST$ logunif 1e-8 1e-3 output bounded
+0 $ESTWST$ logunif 1e-8 1e-3 output bounded
+0 $GUYMJO1$ logunif 1e-8 1e-3 hide bounded
+0 $GUYCAA1$ logunif 1e-8 1e-3 hide bounded
+0 $GUYEST1$ logunif 1e-8 1e-3 hide bounded
+0 $GUYWST1$ logunif 1e-8 1e-3 hide bounded
+0 $MJOCAA1$ logunif 1e-8 1e-3 hide bounded
+0 $MJOEST1$ logunif 1e-8 1e-3 hide bounded
+0 $MJOWST1$ logunif 1e-8 1e-3 hide bounded
+0 $CAAEST1$ logunif 1e-8 1e-3 hide bounded
+0 $CAAWST1$ logunif 1e-8 1e-3 hide bounded
+0 $ESTWST1$ logunif 1e-8 1e-3 hide bounded
+0 $GUYMJO2$ logunif 1e-8 1e-3 hide bounded
+0 $GUYEST2$ logunif 1e-8 1e-3 hide bounded
+0 $GUYWST2$ logunif 1e-8 1e-3 hide bounded
+0 $MJOEST2$ logunif 1e-8 1e-3 hide bounded
+0 $MJOWST2$ logunif 1e-8 1e-3 hide bounded
+0 $ESTWST2$ logunif 1e-8 1e-3 hide bounded
+0 $GUYEST3$ logunif 1e-8 1e-3 hide bounded
+0 $GUYWST3$ logunif 1e-8 1e-3 hide bounded
+0 $ESTWST3$ logunif 1e-8 1e-3 hide bounded
+0 $GUYEST4$ logunif 1e-8 1e-3 hide bounded
+1 $TDIV1$ unif 1e4 5e4 output bounded
+1 $TDIV2$ unif $TDIV1$ 8e4 output paramInRange bounded 
+1 $TDIV3$ unif $TDIV2$ 10e4 output paramInRange bounded
+1 $TDIV4$ unif $TDIV3$ 15e4 output paramInRange bounded
+1 $TDIV5$ unif $TDIV4$ 25e4 output paramInRange bounded
+
+[RULES]
+
+[COMPLEX PARAMETERS]
