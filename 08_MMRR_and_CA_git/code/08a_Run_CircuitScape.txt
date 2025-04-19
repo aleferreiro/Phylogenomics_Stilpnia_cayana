@@ -1,0 +1,17 @@
+# Initialize Julia
+/home/aferreiro/julia-1.9.4/bin/julia
+
+               _
+   _       _ _(_)_     |  Documentation: https://docs.julialang.org
+  (_)     | (_) (_)    |
+   _ _   _| |_  __ _   |  Type "?" for help, "]?" for Pkg help.
+  | | | | | | |/ _` |  |
+  | | |_| | | | (_| |  |  Version 1.9.4 (2023-11-14)
+ _/ |\__'_|_|_|\__'_|  |  Official https://julialang.org/ release
+|__/                   |
+
+# Luego debo cargar el paquete de CircuitScape con using
+using Circuitscape
+
+# Localizado desde la carpeta donde se encuentra el ini file, lo corro con
+compute("myjob.ini")
