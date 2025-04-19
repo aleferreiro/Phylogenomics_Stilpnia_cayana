@@ -1,0 +1,18 @@
+
+VCFtools - 0.1.16
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--vcf 00_IPYRAD/Unlinked_data/Tangara_2023_83-II_randSNP.vcf
+	--out 09_gradientForest/data/79samp/Stilpnia_79_unlink
+	--recode
+	--remove-indv UFG4028
+	--remove-indv UFG5639
+	--remove-indv UFG5668
+	--remove-indv UFG5753
+
+Excluding individuals in 'exclude' list
+After filtering, kept 79 out of 83 Individuals
+Outputting VCF file...
+After filtering, kept 12791 out of a possible 12791 Sites
+Run Time = 2.00 seconds

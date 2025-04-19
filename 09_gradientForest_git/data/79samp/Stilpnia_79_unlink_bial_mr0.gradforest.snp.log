@@ -1,0 +1,13 @@
+
+VCFtools - 0.1.16
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--vcf 09_gradientForest/data/79samp/Stilpnia_79_unlink_bial_mr0.recode.vcf
+	--012
+	--out 09_gradientForest/data/79samp/Stilpnia_79_unlink_bial_mr0.gradforest.snp
+
+After filtering, kept 79 out of 79 Individuals
+Writing 012 matrix files ... Done.
+After filtering, kept 705 out of a possible 705 Sites
+Run Time = 0.00 seconds
