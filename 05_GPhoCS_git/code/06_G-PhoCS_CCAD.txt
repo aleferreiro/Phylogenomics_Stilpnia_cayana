@@ -1,0 +1,28 @@
+#!/bin/bash
+
+#SBATCH --job-name=GPhoCS_run1
+#SBATCH --partition=short
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=64
+#SBATCH --cpus-per-task=1
+#SBATCH --time 0-1:00
+
+# Cargar el entorno del usuario incluyendo la funcionalidad de modules
+# No tocar
+. /etc/profile
+
+# Configurar OpenMP y otras bibliotecas que usan threads
+# usando los valores especificados arriba
+export OMP_NUM_THREADS=$SLURM_CPUS_PER_TASK
+export MKL_NUM_THREADS=$SLURM_CPUS_PER_TASK
+
+# Me ubico dentro de la carpeta donde correr el programa
+# si largue el sbatch desde mi home
+
+# cd GPhoCS
+module load gcc/11.2.0
+module load libtool/2.4.6
+module load openmpi/4.1.2rc1
+
+# Lanzar el programa
+srun /home/aferreiro/G-PhoCS/bin/G-PhoCS Tangara_2023_83-II_run1_short.ctl
