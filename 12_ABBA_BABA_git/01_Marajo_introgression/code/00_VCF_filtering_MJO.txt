@@ -1,0 +1,18 @@
+# First of all we have to filter the sample used
+
+# Then, we have to filter the SNPs using vcftools to retain only 
+# unlinked biallelic SNPs and loci without missing data.
+
+# 1. vcf subsample and filter biallic SNPs
+
+vcftools --vcf ../00_IPYRAD/Tangara_2023_84-II_outfiles/Tangara_2023_84-II.vcf --keep 01_Marajo_introgression/data/pops_24samp.txt --min-alleles 2 --max-alleles 2 --out 01_Marajo_introgression/data/Scay_84_24samp_bial --recode
+
+# 2. Keep 1 SNP per locus.
+
+# Filter recoded vcf to retain one SNP per locus (In cmd)
+perl 01_Marajo_introgression/data/randSnps.pl < 01_Marajo_introgression/data/Scay_84_24samp_bial.recode.vcf > 01_Marajo_introgression/data/Scay_84_24samp_bial_un.vcf #command (from any folder that contains the infile and the attached file)
+
+
+# 3. Remove SNPs with missing data
+vcftools --vcf 01_Marajo_introgression/data/Scay_84_24samp_bial_un.vcf --max-missing 1 --out 01_Marajo_introgression/data/Scay_84_24samp_bial_un_noMD --recode
+
