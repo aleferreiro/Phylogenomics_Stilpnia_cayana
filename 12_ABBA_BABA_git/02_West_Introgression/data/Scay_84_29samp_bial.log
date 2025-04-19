@@ -1,0 +1,17 @@
+
+VCFtools - 0.1.16
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--vcf ../00_IPYRAD/Tangara_2023_84-II_outfiles/Tangara_2023_84-II.vcf
+	--keep 02_West_introgression/data/pops_29samp.txt
+	--max-alleles 2
+	--min-alleles 2
+	--out 02_West_introgression/data/Scay_84_29samp_bial
+	--recode
+
+Keeping individuals in 'keep' list
+After filtering, kept 29 out of 84 Individuals
+Outputting VCF file...
+After filtering, kept 105525 out of a possible 116988 Sites
+Run Time = 6.00 seconds

@@ -1,0 +1,91 @@
+#################################
+# This is the code to estimate D-statistics of ABBA BABA test to assess introgression in Western Cerrado population.
+# We obtained D, its significance by jacknife procedure obtaining Z-scores (higher than 3 are considered significative)
+# and p-values, and lastely f-statistics (proportion of genome introgressed).
+
+# We obtained D statistic for 
+# •	P1= E Cerrado (EST; 10 samples)
+# •	P2= W Cerrado (WST; 8 samples)
+# •	P3= NAS (10 samples, 4 from GUY, 2 from PAR and 4 from AMA)
+# •	P4=Tangara (1 sample)
+
+
+# To run, locate within 13_ABBA_BABA directory
+
+# The Dsuite tools needs the prefiltered vcf, the populations file, and a newick tree with the topology between populations (that defines P1, P2 AND P3)
+# here the newick tree was defined as:
+(NAS,(WST,EST));
+
+# Then, we run Dsuite to estimate the D-stats using the following sentence: 
+Dsuite/Build/Dsuite Dtrios 
+	-t 02_West_introgression/data/tree.nwk 
+	-o 02_West_introgression/result/Scay_84_29samp_bial_un_noMD 
+	-n 01 
+	-k 100 
+	02_West_introgression/data/Scay_84_29samp_bial_un_noMD.recode.vcf 
+	02_West_introgression/data/pops_29samp.txt
+
+# For this first run, we used the vcf, without missing data, with biallelic SNP, and 1 SNP per locus (2187 variants)
+# This perform jacknife procedure to obtain significance of D-statitics, by dividing the genomic dataset in 100 blocks (-k 100) and leaving one of them out on each resample iteration.
+# The -n argument helps to define a run number to the analysis that is added to the output file names.
+
+# After, this it will generate various files. The relevant is the _TREE as it provide D-stats for the topology we want to assess. 
+
+# Result: D = 0.009. No significant D (Z-score < 3), i.e. no gene flow signal between WST and NAS. 
+# WST polymorphism is ancestral rather than by current gene flow.
+
+#*********************************************
+# Output files
+
+# In [OUTPUT_NAME]_BBAA.txt, trios are arranged so that P1 and P2 always share the most derived alleles (BBAA is always the highest number). 
+# There are two other output files: one with the _tree.txt suffix: [OUTPUT_NAME]_tree.txt where trios are arranged according to the tree we gave Dsuite, 
+# and a file with the _Dmin.txt suffix [OUTPUT_NAME]_Dmin.txt where trios are arranged so that the D statistic is minimised - providing a kind of 
+# "lower bound" on gene-flow statistics.
+
+#**********************************************
+
+###############################################
+
+# Second run, by modifying number of blocks
+Dsuite/Build/Dsuite Dtrios \
+	-t 02_West_introgression/data/tree.nwk \
+	-o 02_West_introgression/result/Scay_84_29samp_bial_un_noMD \
+	-n 02 \
+	-k 20 \
+	02_West_introgression/data/Scay_84_29samp_bial_un_noMD.recode.vcf \
+	02_West_introgression/data/pops_29samp.txt
+
+# Result: D = 0.009. No significant D (Z-score  = 0.22), i.e. no gene flow signal between WST and NAS. 
+# WST polymorphism is ancestral rather than by current gene flow.
+
+###############################
+
+# As a third try we will use the dataset without filtering for missing data and with 20 blocks
+
+Dsuite/Build/Dsuite Dtrios \
+	-t 02_West_introgression/data/tree.nwk \
+	-o 02_West_introgression/result/Scay_84_29samp_bial_un \
+	-n 01 \
+	-k 20 \
+	02_West_introgression/data/Scay_84_29samp_bial_un.vcf \
+	02_West_introgression/data/pops_29samp.txt
+
+# Result: D = 0.06. No significant D by Z-score (2.5), but significant by p-value (0.00779), i.e. no gene flow signal between WST and NAS. 
+# WST polymorphism is ancestral rather than by current gene flow.
+
+############################### (WE REPORT THIS RESULT!)
+
+# As a fourth try we will use the dataset without filtering for missing data and with 100 blocks
+
+Dsuite/Build/Dsuite Dtrios \
+	-t 02_West_introgression/data/tree.nwk \
+	-o 02_West_introgression/result/Scay_84_29samp_bial_un \
+	-n 02 \
+	-k 100 \
+	02_West_introgression/data/Scay_84_29samp_bial_un.vcf \
+	02_West_introgression/data/pops_29samp.txt
+
+# Result: D = 0.06. No significant D by Z-score (2.65), but significant by p-value (0.00779)
+# i.e. gene flow signal between WST and NAS. 
+# WST polymorphism is ancestral rather than by current gene flow. 
+# f4-ratio = 0.0786 indicates 7.86% of the WST genome introgressed. 
