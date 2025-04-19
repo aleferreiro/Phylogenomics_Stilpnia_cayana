@@ -1,0 +1,41 @@
+Input parameter values:
+               datapath = /home/bioinfmacn/Dropbox/Alejandro_ornito/eems_ale/Tangara_2023_83-II
+               mcmcpath = /home/bioinfmacn/Dropbox/Alejandro_ornito/eems_ale/Tangara_2023_83-II_V4
+               prevpath = 
+               gridpath = 
+               distance = euclidean
+                diploid = 1
+                 nIndiv = 83
+                 nSites = 91376
+                 nDemes = 2000
+                   seed = 1701259095
+            numMCMCIter = 4000000
+            numBurnIter = 1000000
+            numThinIter = 9999
+              negBiSize = 10
+              negBiProb = 0.670000
+             qVoronoiPr = 0.250000
+             mrateShape = 0.000500
+             qrateShape = 0.002000
+             sigmaShape = 0.001000
+             qrateScale = 0.500000
+             mrateScale = 2.000000
+             sigmaScale = 1.000000
+       mSeedsProposalS2 = 0.100000
+       qSeedsProposalS2 = 0.500000
+       mEffctProposalS2 = 0.500000
+       qEffctProposalS2 = 0.010000
+      mrateMuProposalS2 = 0.010000
+
+Acceptance proportions:
+	(53487/250327) = 21% for proposal type "qTileRate",		 with proposal variance "qEffctProposalS2"
+	(67220/249408) = 27% for proposal type "qTileMove",		 with proposal variance "qSeedsProposalS2"
+	(69885/250469) = 28% for proposal type "qBirthDeath"
+	(316683/749985) = 42% for proposal type "mTileRate",		 with proposal variance "mEffctProposalS2"
+	(99916/499043) = 20% for proposal type "mMeanRate",		 with proposal variance "mrateMuProposalS2"
+	(238284/750434) = 32% for proposal type "mTileMove",		 with proposal variance "mSeedsProposalS2"
+	(185845/749857) = 25% for proposal type "mBirthDeath"
+	(369752/500477) = 74% for proposal type "degrees of freedom"
+
+Final log prior: 19.49
+Final log llike: 16468.01
